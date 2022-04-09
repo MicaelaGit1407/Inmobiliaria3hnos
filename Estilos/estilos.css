@@ -1,0 +1,377 @@
+*{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Abril Fatface', cursive;
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;   
+}
+
+/* INDEX */
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 28px 600px 80px 400px 120px 30px;
+    grid-template-areas: 
+    "header"
+    "medio"
+    "seleccion"
+    "opcionesInicio"
+    "pie"
+    "derecho";
+}
+
+
+.inicio{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.barraNav {
+    background: transparent;
+}
+
+.barraNav a{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background: transparent;
+   text-decoration: none;
+  
+
+} 
+
+.buscador{
+    height: 40px;
+    width: 200px;
+    order: 1;
+}
+
+.fotologo{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+
+.banner{
+    grid-area: medio;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 6px double #E9DAC1;
+    height: 590px;
+    background-image: url(/Multimedia/prueba1.jpg);
+    background-size: cover;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h1{
+    background: transparent;
+    margin-left: 20px;
+}
+.seleccionDeBusqueda{
+    grid-area: seleccion;
+    font-size: 22px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+}
+
+.operacionOpciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+
+}
+
+.seleccionDeBusqueda input{
+    margin-right: 50px;
+    margin-left: 50px; 
+    font-size: 18px;
+}
+ 
+.localidadOpciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+       
+}
+
+.seleccionDeBusqueda label{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.opcionesInicio{
+    grid-area: opcionesInicio;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.redesSociales{
+    background: transparent;
+}
+
+.iconos{
+    filter: brightness(2.5);
+    mix-blend-mode: multiply;
+    width: 45px;
+    height: 45px;
+    float: right;
+    background: transparent;
+}
+
+.imagenInicio {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    width: 350px;
+    gap: 50px;
+    border: 6px double #F7E2E2;
+}
+
+.pie{
+    grid-area: pie;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35858B;
+    
+}
+
+.derecho{
+    grid-area: derecho;
+    text-align: center;
+    background-color:#35858B;
+    color: black;
+    display: inline;
+}  
+
+@media screen and (max-width:767px) {
+    *{
+        background-color: #54BAB9;
+        
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 300px 1000px 250px 70px;
+        grid-template-areas: 
+        "header"
+        "medio"
+        "opcionesInicio"
+        "pie"
+        "derecho";
+    }
+
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .seleccionesPrincipales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 6px double #E9DAC1;
+        height: 250px;
+        background-image: url(/Multimedia/fondo.jpg);
+        background-size: cover;
+        font-size: 25px;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+    }
+
+    .opcionesInicio{
+        grid-area: opcionesInicio;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+        
+
+    }
+    
+    .imagenInicio{
+        width: 240px;
+        height: 240px;
+    }
+
+
+    .pie{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 240px;
+    }
+
+    .barraNav a{
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        overflow: hidden;
+    } 
+
+    .localidadOpciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+} 
+
+    @media screen and (max-width: 1023px) and (min-width:768px){
+    *{
+        background-color: cornflowerblue;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 250px 800px 200px 40px;
+        grid-template-areas: 
+        "header"
+        "medio"
+        "opcionesInicio"
+        "pie"
+        "derecho";
+    }
+
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 200px;
+        flex-wrap: wrap;
+        align-items:center;
+        overflow: hidden;
+        
+    }
+
+    .busqueda{
+        height:45px;
+        width: 250px;
+
+    }
+
+    .barraNav a {
+        font-size: 16px;
+    }
+
+    .localidadOpciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seleccionesPrincipales{
+        font-size: 18px;
+    }
+
+    .pie{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 200px;
+    }
+
+
+} 
+
+
+/* NOSOTROS */
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 500px 200px 100px 30px;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "parrafo"
+    "footer"
+    "derecho"
+}
+
+.inicio{
+    grid-area: header;
+}
+
+.sobreNosotros{
+    grid-area: imagen;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.textoNosotros {
+    grid-area: parrafo;
+}
+
+.pieDePagina{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.derecho{
+    grid-area: derecho;
+} 
+
+
+/*ALQUILERES*/
+
+.alquileres{
+    display: inline-block;
+}
+
+
+/* CONTACTO */
+
+.iframeContacto {
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.iframeContacto:hover {
+    width: 500px; 
+    height: 200px;
+    border: 5px solid blue;
+    transition: 10s;
+}
+
+
+

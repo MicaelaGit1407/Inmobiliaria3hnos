@@ -21,6 +21,55 @@
     "derecho";
 }
 
+.barraNav ul{
+    background: transparent;
+}
+
+.barraNav a{
+    background: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+   text-decoration: none;
+   transition: all 1s;
+} 
+
+.barraNav input:focus{
+    width: 200px;
+    font-size: 40px;
+}
+
+.banner h1:hover{
+color: black;
+transition: all 1.5s;
+
+}
+
+.barraNav a:hover{
+    color: #35858B;
+
+}
+
+.buscador{
+    height: 40px;
+    width: 200px;
+    order: 1;
+}
+
+.fotologo{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    background: transparent;
+}
+
+.colorPie {
+    background: transparent;
+}
+
 
 .inicio{
     grid-area: header;
@@ -43,21 +92,6 @@
   
 
 } 
-
-.buscador{
-    height: 40px;
-    width: 200px;
-    order: 1;
-}
-
-.fotologo{
-    display: inline-block;
-    width: 120px;
-    height: 100px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
-
 
 .banner{
     grid-area: medio;

@@ -61,9 +61,10 @@ transition: all 1.5s;
     display: inline-block;
     width: 120px;
     height: 100px;
+    background: transparent;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-    background: transparent;
+    
 }
 
 .colorPie {

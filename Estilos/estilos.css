@@ -201,15 +201,11 @@ h1{
 }  
 
 @media screen and (max-width:767px) {
-    *{
-        background-color: #54BAB9;
-        
-    }
-
+    
     .grid{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 300px 1000px 250px 70px;
+        grid-template-rows: 70px 300px 1000px 250px 70px;
         grid-template-areas: 
         "header"
         "medio"

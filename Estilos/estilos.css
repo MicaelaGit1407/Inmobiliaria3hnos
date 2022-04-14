@@ -208,25 +208,9 @@ h1{
     display: inline;
 }  
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px){
     
-    .grid{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 70px 300px 1000px 250px 70px;
-        grid-template-areas: 
-        "header"
-        "medio"
-        "opcionesInicio"
-        "pie"
-        "derecho";
-/* PAGINA ALQUILERES*/
-
-
-
-@media screen and (max-width:767px) {
-
-    /*.grid{
+ /*.grid{
         display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 28px 600px 80px 400px 120px 30px;
@@ -246,16 +230,14 @@ h1{
     }*/
 
 
-    .opcionesInicio{
+.opcionesInicio{
         grid-area: opcionesInicio;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-size: 10px;
-        
-
-    }
+     }
     
 
 
@@ -279,7 +261,7 @@ h1{
         justify-content: center;
     }
 
-} 
+}
 
     @media screen and (max-width: 1023px) and (min-width:768px){
 
@@ -323,12 +305,9 @@ h1{
     }
 
 
-} 
-
-
 /* NOSOTROS */
 
-.nosotros {
+} .nosotros {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 500px 200px 100px 30px;
@@ -391,3 +370,4 @@ h1{
     border: 5px solid blue;
     transition: 10s;
 }
+

@@ -8,7 +8,7 @@
 }
 
 /* INDEX */
-.grid{
+/*.grid{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 28px 600px 80px 400px 120px 30px;
@@ -19,6 +19,25 @@
     "opcionesInicio"
     "pie"
     "derecho";
+}
+
+.barraNavInicio a{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background: transparent;
+   text-decoration: none;
+   color: white;
+  
+} 
+.barraNavInicio a:hover{
+    color: #35858B;
+}
+*/
+
+.nav-item a{
+    color: blue;
 }
 
 .barraNav ul{
@@ -33,16 +52,13 @@
     margin-left: 40px;
    text-decoration: none;
    transition: all 1s;
+   color: black;
 } 
 
-.barraNav input:focus{
-    width: 200px;
-    font-size: 40px;
-}
 
 .banner h1:hover{
 color: black;
-transition: all 1.5s;
+transition: all 1s;
 
 }
 
@@ -50,6 +66,7 @@ transition: all 1.5s;
     color: #35858B;
 
 }
+
 
 .buscador{
     height: 40px;
@@ -79,20 +96,11 @@ transition: all 1.5s;
     justify-content: space-around;
 }
 
-.barraNav {
+.barraNav {  
     background: transparent;
 }
 
-.barraNav a{
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
-    background: transparent;
-   text-decoration: none;
-  
 
-} 
 
 .banner{
     grid-area: medio;
@@ -100,7 +108,7 @@ transition: all 1.5s;
     flex-direction: column;
     justify-content: space-around;
     border: 6px double #E9DAC1;
-    height: 590px;
+    height: 550px;
     background-image: url(/Multimedia/prueba1.jpg);
     background-size: cover;
     align-items: flex-start;
@@ -127,9 +135,11 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
 
 }
+
 
 .seleccionDeBusqueda input{
     margin-right: 50px;
@@ -141,7 +151,8 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-       
+    margin-right: 15px;
+    margin-left: 15px;  
 }
 
 .seleccionDeBusqueda label{
@@ -150,13 +161,9 @@ h1{
 }
 
 .opcionesInicio{
-    grid-area: opcionesInicio;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 13px;
+ text-align: center;
+ padding-bottom: 20px;
+ padding-top: 20px;
 
 }
 
@@ -174,28 +181,29 @@ h1{
 }
 
 .imagenInicio {
-    display: flex;
-    flex-direction: row;
-    height: 350px;
-    width: 350px;
+    height: 25em;
+    width: 25em;
     gap: 50px;
     border: 6px double #F7E2E2;
 }
 
 .pie{
-    grid-area: pie;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #35858B;
+    background-color: gray;
+    font-size: 15px;
+    
+}
+
+.pie a{
+    font-size: 18px;
     
 }
 
 .derecho{
     grid-area: derecho;
     text-align: center;
-    background-color:#35858B;
+    background-color:white;
     color: black;
     display: inline;
 }  
@@ -212,56 +220,50 @@ h1{
         "opcionesInicio"
         "pie"
         "derecho";
+/* PAGINA ALQUILERES*/
+
+
+
+@media screen and (max-width:767px) {
+
+    /*.grid{
+        display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 28px 600px 80px 400px 120px 30px;
+    grid-template-areas: 
+    "header"
+    "medio"
+    "seleccion"
+    "opcionesInicio"
+    "pie"
+    "derecho";
     }
 
     .inicio{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items:flex-start;
-        overflow: hidden;
-        height: 200px;
-    }
+        flex-direction: row;
+        font-size: 10PX;
+    }*/
 
-    .seleccionesPrincipales{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 6px double #E9DAC1;
-        height: 250px;
-        background-image: url(/Multimedia/fondo.jpg);
-        background-size: cover;
-        font-size: 25px;
-        align-items: center;
-        border-radius: 10px;
-        font-weight: bold;
-        font-size: 24px;
-        color: white;
-    }
 
     .opcionesInicio{
         grid-area: opcionesInicio;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         text-align: center;
-        font-size: 13px;
+        font-size: 10px;
         
 
     }
     
-    .imagenInicio{
-        width: 240px;
-        height: 240px;
-    }
 
 
     .pie{
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        height: 240px;
+        height: 300px;
     }
 
     .barraNav a{
@@ -280,11 +282,8 @@ h1{
 } 
 
     @media screen and (max-width: 1023px) and (min-width:768px){
-    *{
-        background-color: cornflowerblue;
-    }
 
-    .grid{
+    /*    .grid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 200px 250px 800px 200px 40px;
@@ -294,7 +293,7 @@ h1{
         "opcionesInicio"
         "pie"
         "derecho";
-    }
+    }*/
 
     .inicio{
         display: flex;
@@ -307,20 +306,9 @@ h1{
         
     }
 
-    .busqueda{
-        height:45px;
-        width: 250px;
-
-    }
 
     .barraNav a {
         font-size: 16px;
-    }
-
-    .localidadOpciones{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .seleccionesPrincipales{
@@ -331,7 +319,7 @@ h1{
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        height: 200px;
+        height: 300px;
     }
 
 
@@ -403,6 +391,3 @@ h1{
     border: 5px solid blue;
     transition: 10s;
 }
-
-
-

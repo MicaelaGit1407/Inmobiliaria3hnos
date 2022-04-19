@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Estilos/estilos.css">
-    <link rel="icon" href="../Multimedia/logo.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <title>Nuestra Historia</title>
-</head>
-
-<body class="nosotros">
-    <header>
-        <section class="inicio ">
-            <nav class="barraNav">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Estilos/estilos.css">
+        <link rel="icon" href="../Multimedia/logo.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>Nuestra Historia</title>
+    </head>
+    
+    <body class="container-fluid">
+        <header>
+            <section class="row inicio">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand animate__animated animate__zoomIn" href="../index.html">III Hermanos</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/alquiler.html">ALQUILER</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/venta.html">VENTA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/contacto.html">CONTACTO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/nosotros.html">NOSOTROS</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </section>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Multimedia/equipo laboral.png" class="d-block w-100" alt="Equipo laboral">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Multimedia/teamwork.jpg" class="d-block w-100" alt="Personas">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Multimedia/equipodetrabajo.jpg" class="d-block w-100" alt="Firma">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <p class="textoNosotros">
+            Somos un equipo de profesionales con una sólida trayectoria, actualmente somos la Inmobiliaria lider en el
+            mercado de Zona Sur. <br>
+            El trato amable y el buen clima de trabajo son una premisa en nuestra Inmobiliaria y se traducen en la
+            relación con nuestros clientes, transmitiendo tranquilidad y confianza a la hora de recibirlos y
+            resolver sus inquietudes.
+            Nuestro objetivo es encontrar un hogar para cada inquilino y brindar tranquilidad para cada locatario.
+            Desde 2011, el Ingeniero Facundo Avila, fundador de la Inmobiliaria, ha desarrollado proyectos y
+            construcciones de todo tipo de obras.
+            Para brindarte las mejores oportunidades de inversión gerenciamos proyectos de gran magnitud con un equipo
+            de profesionales especializados en los aspectos financieros,
+            legales, administrativos, técnicos y comercial en dos etapas bien diferenciadas del proceso de
+            administración: el
+            desarrollo del producto acorde a las necesidades del mercado y el gerenciamiento técnico de la obra en lo
+            referido
+            a planificación, control, puesta en funcionamiento y comercialización del producto terminado.
+        </p>
+    
+        <footer class="row pie">
+            <a class="col-lg-2 col-md-2 col-sm-12 col-xs-12 colorPie" href="./index.html">
+                <img class="fotologo" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
+            </a>
+            <nav class="col-lg-8 col-md-8 col-sm-12 col-xs-12 barraNav">
                 <ul>
-                    <a href="../index.html">INICIO </a>
-                    <a href="../Paginas/nosotros.html"> NOSOTROS </a>
-                    <a href="../Paginas/venta.html"> VENTA </a>
-                    <a href="../Paginas/alquiler.html"> ALQUILER </a>
-                    <a href="../Paginas/contacto.html"> CONTACTO </a>
+                    <a href="../index.html">INICIO</a>
+                    <a href="../Paginas/nosotros.html">NOSOTROS</a>
+                    <a href="../Paginas/venta.html">VENTA</a>
+                    <a href="../Paginas/alquiler.html">ALQUILER</a>
+                    <a href="../Paginas/contacto.html">CONTACTO</a>
                 </ul>
             </nav>
-            <div class="busqueda">
-                <input type="search" name="buscar" placeholder="Ingresa tu busqueda">
-                <input type="submit" value="Buscar">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 redesSociales">
+    
+                <a href="https://www.Instagram.com" target="blank">
+                    <img class="iconos" src="../Multimedia/instagram.png" alt="Instagram">
+                </a>
+    
+                <a href="https://www.facebook.com/" target="blank">
+                    <img class="iconos" src="../Multimedia/facebook.png" alt="Facebook">
+                </a>
+    
+                <a href="https://www.twitter.com/" target="blank">
+                    <img class="iconos" src="../Multimedia/twitter.png" alt="Twitter">
+                </a>
             </div>
-            <a href="../index.html">
-                <img class="fotologo icono" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
-            </a>
-        </section>
-    </header>
-
-    <div class="sobreNosotros" >
-        <img src="../Multimedia/equipo laboral.png" alt="">
-    </div>
-    <p class="textoNosotros">
-        Somos un equipo de profesionales con una sólida trayectoria, actualmente somos la Inmobiliaria lider en el
-        mercado de Zona Sur. <br>
-        El trato amable y el buen clima de trabajo son una premisa en nuestra Inmobiliaria y se traducen en la
-        relación con nuestros clientes, transmitiendo tranquilidad y confianza a la hora de recibirlos y
-        resolver sus inquietudes.
-        Nuestro objetivo es encontrar un hogar para cada inquilino y brindar tranquilidad para cada locatario.
-        Desde 2011, el Ingeniero Facundo Avila, fundador de la Inmobiliaria, ha desarrollado proyectos y
-        construcciones de todo tipo de obras.
-        Para brindarte las mejores oportunidades de inversión gerenciamos proyectos de gran magnitud con un equipo
-        de profesionales especializados en los aspectos financieros,
-        legales, administrativos, técnicos y comercial en dos etapas bien diferenciadas del proceso de
-        administración: el
-        desarrollo del producto acorde a las necesidades del mercado y el gerenciamiento técnico de la obra en lo
-        referido
-        a planificación, control, puesta en funcionamiento y comercialización del producto terminado.
-    </p>
-
-    <p class="derecho">
-        © 2022 Inmobiliaria 3 hermanos S.A. Todos los derechos reservados - Ciudad Autónoma de Buenos Aires.
-    </p>
-
-    <footer class="pieDePagina">
-        <a href="../index.html">
-            <img class="fotologo icono" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
-        </a>
-        <nav>
-            <ul class="barraNav">
-                <a href="../index.html">INICIO</a>
-                <a href="../Paginas/nosotros.html">NOSOTROS</a>
-                <a href="../Paginas/venta.html">VENTA</a>
-                <a href="../Paginas/alquiler.html">ALQUILER</a>
-                <a href="../Paginas/contacto.html">CONTACTO</a>
-            </ul>
-        </nav>
-
-        <div class="redesSociales">
-
-            <a href="https://www.Instagram.com" target="blank">
-                <img class="iconos" src="../Multimedia/instagram.png" alt="Instagram">
-            </a>
-
-            <a href="https://www.facebook.com/" target="blank">
-                <img class="iconos" src="../Multimedia/facebook.png" alt="Facebook">
-            </a>
-
-            <a href="https://www.twitter.com/" target="blank">
-                <img class="iconos" src="../Multimedia/twitter.png" alt="Twitter">
-            </a>
-
-        </div>
-    </footer>
-</body>
-
+    
+            <p class="col-12 derecho">
+                © 2022 Inmobiliaria 3 hermanos S.A. Todos los derechos reservados - Ciudad Autónoma de Buenos Aires.
+            </p>
+        </footer>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    </body>
+    
 
 </html>

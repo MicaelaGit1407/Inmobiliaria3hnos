@@ -5,91 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <link rel="icon" href="../Multimedia/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 
-<body>
-    <header>
-        <section class="inicio">
-            <nav class="barraNav">
-                <ul>
-                    <a href="../index.html">INICIO </a>
-                    <a href="../Paginas/nosotros.html"> NOSOTROS </a>
-                    <a href="../Paginas/venta.html"> VENTA </a>
-                    <a href="../Paginas/alquiler.html"> ALQUILER </a>
-                    <a href="../Paginas/contacto.html"> CONTACTO </a>
-                </ul>
-            </nav>
-            <div class="busqueda">
-                <input type="search" name="buscar" placeholder="Ingresa tu busqueda">
-                <input type="submit" value="Buscar">
+<body class="bodyContacto">
+    <section class="row inicio">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">III Hermanos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/alquiler.html">ALQUILER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/venta.html">VENTA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Paginas/nosotros.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <a href="../index.html">
-                <img class="fotologo icono" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
-            </a>
-        </section>
+        </nav>
+    </section>
     </header>
 
-    <div>
-        <form class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <label for="Nombre">Nombre:</label>
-            <input type="text" placeholder="Nombre" name="Nombre">
-            <label for="Telefono">Telefono:</label>
-            <input type="tel" placeholder="Telefono o Celular" name="Telefono">
-            <label for="email">E-mail:</label>
-            <input type="email" placeholder="E-mail" name="email"> <br>
+    <div class="contacto">
+        <form class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formulario">
+            <label for="Nombre">NOMBRE:</label>
+            <input type="text" placeholder="Nombre" name="Nombre" required>
+            <label for="Telefono">TELEFONO:</label>
+            <input type="tel" placeholder="Telefono o Celular" name="Telefono" required>
+            <label for="email">E-MAIL:</label>
+            <input type="email" placeholder="E-mail" name="email" required> <br>
             <label for="Me interesa">Deseo recibir información sobre:</label>
             <select name="unidades" id="">
                 <option value="01">Mitre 3250</option>
                 <option value="02">9 de Julio 1233</option>
                 <option value="03">F. Onsari 30</option>
             </select> <br>
-    
+            
             <textarea name="" id="" cols="30"
-                rows="10">Hola, me interesa esta propiedad y quiero que me contacten, gracias.</textarea> <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Eliminar">
-    
-            <input type="checkbox" name="whatsapp" id="" value="wpp"> whatsapp
-    
+            rows="10">Hola, me interesa esta propiedad y quiero que me contacten, gracias.</textarea>
+            <input type="checkbox" name="whatsapp" id="" value="wpp"> WhatsApp
+            <div class="botones">
+            <input type="submit" value="Enviar" class="botonesContacto">
+            <input type="reset" value="Eliminar" class="botonesContacto">
+            </div>
         </form>
 
-        <h3>Comunicate con nosotros</h3>
-        <p>Un representante se estará comunicando a la brevedad</p>
-    </div>
-
-    <form>
-        <label for="Nombre">Nombre:</label>
-        <input type="text" placeholder="Nombre" name="Nombre">
-        <label for="Telefono">Telefono:</label>
-        <input type="tel" placeholder="Telefono o Celular" name="Telefono">
-        <label for="email">E-mail:</label>
-        <input type="email" placeholder="E-mail" name="email"> <br>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu duda"></textarea> <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Eliminar">
-
-        <input type="checkbox" name="whatsapp" id="" value="wpp"> whatsapp
-    </form>
-
-    <div>
-        <h3>Nuestras Oficinas:</h3>
+        <h3>NUESTRAS OFICINAS</h3>
         <iframe class="iframeContacto"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.637530904541!2d-58.36434068476875!3d-34.66385588044398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334fafee299f%3A0xb4af4c4c1816ba8!2sAv.%20Bartolom%C3%A9%20Mitre%201000%2C%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647207954561!5m2!1ses-419!2sar"
             width="250" height="200" allowfullscreen="" loading="lazy">
         </iframe>
+
     </div>
 
-    <footer class="pieDePagina">
-        <a href="../index.html">
-            <img class="fotologo icono" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
+    <footer class="row pie">
+        <a class="col-lg-2 col-md-2 col-sm-12 col-xs-12 colorPie" href="../index.html">
+            <img class="fotologo" src="../Multimedia/logo.jpg" alt="Logo de la empresa">
         </a>
-        <nav>
-            <ul class="barraNav">
+        <nav class="col-lg-8 col-md-8 col-sm-12 col-xs-12 barraNav">
+            <ul>
                 <a href="../index.html">INICIO</a>
                 <a href="../Paginas/nosotros.html">NOSOTROS</a>
                 <a href="../Paginas/venta.html">VENTA</a>
@@ -97,11 +91,7 @@
                 <a href="../Paginas/contacto.html">CONTACTO</a>
             </ul>
         </nav>
-        <p>
-            © 2022 Inmobiliaria 3 hermanos S.A. Todos los derechos reservados - Ciudad Autónoma de Buenos Aires.
-        </p>
-
-        <div class="redesSociales">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 redesSociales">
 
             <a href="https://www.Instagram.com" target="blank">
                 <img class="iconos" src="../Multimedia/instagram.png" alt="Instagram">
@@ -114,10 +104,21 @@
             <a href="https://www.twitter.com/" target="blank">
                 <img class="iconos" src="../Multimedia/twitter.png" alt="Twitter">
             </a>
-
         </div>
+
+        <p class="col-12 derecho">
+            © 2022 Inmobiliaria 3 hermanos S.A. Todos los derechos reservados - Ciudad Autónoma de Buenos Aires.
+        </p>
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

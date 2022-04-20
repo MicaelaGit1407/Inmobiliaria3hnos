@@ -1,3 +1,5 @@
+@import "alquiler";
+
 *{
     color: black;
     font-family: 'Abril Fatface', cursive;
@@ -6,34 +8,6 @@
     margin: 0%;   
 }
 
-/* INDEX */
-/*.grid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 28px 600px 80px 400px 120px 30px;
-    grid-template-areas: 
-    "header"
-    "medio"
-    "seleccion"
-    "opcionesInicio"
-    "pie"
-    "derecho";
-}
-
-.barraNavInicio a{
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
-    background: transparent;
-   text-decoration: none;
-   color: white;
-  
-} 
-.barraNavInicio a:hover{
-    color: #35858B;
-}
-*/
 
 .inicio a{
     font-size: 22px;
@@ -145,6 +119,17 @@ h1{
     justify-content: center;
     margin-bottom: 10px;
     background-color: grey;
+    
+    input{
+        margin-right: 50px;
+        margin-left: 50px; 
+        font-size: 18px;
+    }
+    label{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: grey;
+    }
 
 }
 
@@ -158,12 +143,6 @@ h1{
 
 }
 
-
-.seleccionDeBusqueda input{
-    margin-right: 50px;
-    margin-left: 50px; 
-    font-size: 18px;
-}
  
 .localidadOpciones{
     display: flex;
@@ -173,12 +152,6 @@ h1{
     margin-left: 15px;  
     background-color: grey;
     height: 3rem;
-}
-
-.seleccionDeBusqueda label{
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: grey;
 }
 
 .opcionesInicio{
@@ -213,12 +186,10 @@ h1{
     align-items: center;
     background-color: #2471A3;
     font-size: 15px;
-    
-}
 
-.pie a{
-    font-size: 18px;
-    
+    a{
+        font-size: 18px; 
+    } 
 }
 
 .derecho{
@@ -242,50 +213,34 @@ h1{
 }
 
 
-/*ALQUILER*/
-
-.alquileres {
-    text-align: center;
-    background-color: grey;
-    color: white; 
-    overflow: hidden;
-}
-
-.borde{
-    border: 3px solid #ADA3A1 ;
-}
-
-.card-text{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card-title{
-    overflow: hidden;
-}
-
 /* CONTACTO */
 
 .contacto {
-display: flex;
-flex-direction: column;
-justify-items: center;
-align-items: center;
- margin: 0px 25% 0px 25%;
- background-color: white;
- overflow: hidden;
- border: 5px grey solid;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 25% 0px 25%;
+    background-color: white;
+    overflow: hidden;
+    border: 5px grey solid;
+    h3 {
+        overflow: hidden;
+        margin-top: 3%;
+        margin-bottom: 3%;
+}
+
 }
 
 .iframeContacto {
     width: 70%;
     height: 300px;
     border: 3px solid rgb(145, 141, 141);
-}
-
-.iframeContacto:hover {
+    &:hover {
     width: 100%; 
     height: 300px;
     transition: 2s;
+    }
 }
 
 .formulario {
@@ -311,12 +266,6 @@ align-items: center;
     flex-direction: row;
 }
 
-
-.contacto h3 {
-    overflow: hidden;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
 
 .bodyContacto{
     background-image: url(/Multimedia/prueba1.jpg);
@@ -351,7 +300,7 @@ align-items: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
      }
     
 
@@ -372,7 +321,6 @@ align-items: center;
         font-size: 15px;
         flex-direction: row;
         margin-bottom: 10px;
-    
     }
 
 .fotologo{

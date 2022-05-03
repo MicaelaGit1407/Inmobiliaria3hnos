@@ -1,0 +1,31 @@
+$colorH1: aliceblue;
+$colorPrincipal: grey;
+$colorTerciario: #85C1E9;
+
+$bordes: (
+    twitter: blue,
+    facebook: pink,
+    instagram: violet
+);
+
+
+$estilos: (
+    color: black,
+    tFuente: 3rem,
+    borde: 3px solid black,
+    fondo: pink
+);
+
+.pie {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2471A3;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@mixin sizes($width, $height) { 
+    width: $width;
+    height: $height;
+    
+}

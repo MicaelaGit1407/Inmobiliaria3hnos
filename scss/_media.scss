@@ -1,0 +1,176 @@
+@media screen and (max-width:767px) {
+
+     .seleccionDeBusqueda input {
+        width: 130px;
+        background-color: gray;
+
+    }
+
+    .opcionesInicio{
+
+        img{
+            width: 18rem;
+            height: 18rem;
+        }
+        h5{
+            font-size: 14px;
+            flex-wrap: nowrap;
+        }
+        
+    }
+
+    .operacionOpciones {
+        flex-direction: row;
+        font-size: 15px;
+
+    }
+
+    .localidadOpciones {
+        font-size: 15px;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .colorPie {
+        display: none;
+    }
+
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+     img{   
+            
+            width: 50px;
+            height: 50px;
+            margin-left: 8px;
+            margin-right: 8px;
+            border: 5px inset cadetblue ;
+            align-items: center;
+           
+        }
+    
+      
+    }
+    
+
+    .derecho {
+        font-size: 10px;
+    }
+
+    .barraNav {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1023px) and (min-width:768px) {
+
+    .seleccionDeBusqueda input {
+        width: 130px;
+        background-color: gray;
+
+    }
+
+
+
+
+    .operacionOpciones {
+        flex-direction: row;
+        font-size: 18px;
+        width: 40%;
+
+        label{
+            width: 50%;
+            font-size: 18px;
+        }
+
+    }
+
+    .localidadOpciones {
+        
+        flex-direction: row;
+        font-size: 18px;
+        width: 40%;
+
+        label{
+            width: 40%;
+            font-size: 18px;
+        }
+    }
+
+
+    .seleccionesPrincipales {
+        font-size: 18px;
+    }
+
+    .opcionesInicio{
+
+        img{
+            width: 15rem;
+            height: 15rem;
+        }
+        h5{
+            font-size: 14px;
+            flex-wrap: nowrap;
+        }
+        
+    }
+
+    .colorPie {
+        display: none;
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        height: 8rem;
+
+        ul{
+            width: 700px;
+         }
+
+
+        ul a{
+            font-size: 16px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .derecho{
+            font-size: 11px;
+        }
+
+    }
+
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 12rem;
+        height: 3rem;
+
+     img{   
+            
+            width: 3rem;
+            height: 3rem;
+            margin-left: 8px;
+            margin-right: 8px;
+            border: 5px inset cadetblue ;
+            align-items: center;
+           
+        }
+
+    }
+
+        .barraNav ul {
+            font-size: 12px;
+        }
+    
+      
+    
+
+}

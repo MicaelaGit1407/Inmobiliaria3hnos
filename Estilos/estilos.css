@@ -6,34 +6,6 @@
     margin: 0%;   
 }
 
-/* INDEX */
-/*.grid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 28px 600px 80px 400px 120px 30px;
-    grid-template-areas: 
-    "header"
-    "medio"
-    "seleccion"
-    "opcionesInicio"
-    "pie"
-    "derecho";
-}
-
-.barraNavInicio a{
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
-    background: transparent;
-   text-decoration: none;
-   color: white;
-  
-} 
-.barraNavInicio a:hover{
-    color: #35858B;
-}
-*/
 
 .inicio a{
     font-size: 22px;
@@ -91,13 +63,6 @@ transition: all 1s;
 }
 
 
- /*  .inicio{
-   grid-area: header;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-around;
-} */
-
 .barraNav {  
     background: transparent;
 }
@@ -105,7 +70,6 @@ transition: all 1s;
 
 
 .banner{
-    grid-area: medio;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -326,25 +290,6 @@ align-items: center;
 
 @media screen and (max-width:767px){
     
- /*.grid{
-        display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 28px 600px 80px 400px 120px 30px;
-    grid-template-areas: 
-    "header"
-    "medio"
-    "seleccion"
-    "opcionesInicio"
-    "pie"
-    "derecho";
-    }
-
-    .inicio{
-        display: flex;
-        flex-direction: row;
-        font-size: 10PX;
-    }*/
-
 
 .opcionesInicio{
         display: flex;
@@ -392,17 +337,7 @@ align-items: center;
 
     @media screen and (max-width: 1023px) and (min-width:768px){
 
-    /*    .grid{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 250px 800px 200px 40px;
-        grid-template-areas: 
-        "header"
-        "medio"
-        "opcionesInicio"
-        "pie"
-        "derecho";
-    }*/
+
 
     .inicio{
         display: flex;
